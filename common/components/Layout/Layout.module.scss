@@ -1,0 +1,29 @@
+// Create a flex container for the layout
+.layout {
+  display: flex;
+  flex-direction: column;
+
+  // Give the header a fixed position and set its height
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+  }
+
+  // Stretch the main content to fill the available space
+  main {
+    margin-top: 60px;
+    flex: 1;
+  }
+
+  // Give the footer a fixed position and set its height
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+  }
+}

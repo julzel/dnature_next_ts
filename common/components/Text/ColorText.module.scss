@@ -1,0 +1,13 @@
+@import '../../../styles/variables';
+
+.primary {
+  color: $brand-orange;
+}
+
+.secondary {
+  color: $brand-blue;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

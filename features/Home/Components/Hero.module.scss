@@ -1,0 +1,30 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.hero {
+  width: 100vw;
+
+  @include media-query(small) {
+    display: flex;
+  }
+
+  &ImageContainer {
+    background-color: $color-primary;
+  }
+
+  &Content {
+    padding: 40px 16px;
+  }
+
+  &Title {
+    text-transform: uppercase;
+    @include header-font($size: 38px);
+  }
+
+  &Paragraph {
+    color: $brand-gold;
+    margin: 0;
+    margin-top: 24px;
+    @include body-font($size: 18px);
+  }
+}

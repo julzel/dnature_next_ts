@@ -1,0 +1,57 @@
+@import './variables';
+@import './mixins';
+
+html,
+body {
+  background-color: $color-primary-dark;
+  color: $white;
+  @include body-font();
+  @include no-space();
+}
+
+// remove default header styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include no-space();
+}
+
+h1 {
+  @include header-font();
+}
+
+h2 {
+  @include header-font($font-secondary-title, 24px, 500);
+}
+
+h3 {
+  @include header-font($font-secondary-title, 20px, 500);
+}
+
+h5 {
+  @include header-font($font-secondary-title, 16px, 500);
+}
+
+h6 {
+  @include header-font($font-secondary-title, 14px, 500);
+}
+
+// remove default button styles
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+// remove default list styles
+ul {
+  list-style: none;
+  list-style: none;
+  @include no-space();
+}
