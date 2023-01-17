@@ -11,8 +11,8 @@ const Hero: React.FC<HeroProps> = ({ image }) => {
     <div className={styles.hero}>
       <div className={styles.heroContent}>
         <h1 className={styles.heroTitle}>
-          <ColorText>La mejor</ColorText>{' '}
-          <ColorText variant='secondary'>alimentación natural</ColorText>{' '}
+          <ColorText>La mejor alimentación</ColorText>{' '}
+          <ColorText variant='secondary'>natural</ColorText>{' '}
           <ColorText>para mascotas</ColorText>
         </h1>
         <p className={styles.heroParagraph}>
